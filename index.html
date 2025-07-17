@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 맞추기 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>숫자 맞추기 게임</h1>
+        <p>1부터 100 사이의 숫자를 맞춰보세요!</p>
+        
+        <div class="game-area">
+            <input type="number" id="guess-input" placeholder="숫자를 입력하세요" min="1" max="100">
+            <button id="guess-button">확인</button>
+            <button id="reset-button">새 게임</button>
+        </div>
+        
+        <div id="message"></div>
+        <div id="history"></div>
+        
+        <div class="stats">
+            <p>시도 횟수: <span id="attempts">0</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
